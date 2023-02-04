@@ -1,0 +1,17 @@
+[{
+    "signUpApi":"https://api.bookonelocal.in/api-bookone/api/user/signup",
+    "loginApi":"https://api.bookonelocal.in/api-bookone/api/user/login",
+    "updateUserApi":"https://api.bookonelocal.in/api-bookone/api/user/updateUser",
+    "addPropertyApi":"https://api.bookonelocal.in/api-bookone/api/property/user/add/property",
+    "addSubscriptionApi":"https://api.bookonelocal.in/api-bookone/api/property/{propertyId}/addSubscription",
+    "addRoomApi":"https://api.bookonelocal.in/api-bookone/api/property/{propertyId}/user/add/room",
+    "getRoomDetailsApi":"https://api.bookonelocal.in/api-bookone/api/property/{propertyId}/rooms",
+    "addRoomPlanApi":"https://api.bookonelocal.in/api-bookone/api/room/property/{propertyId}/room/{individualRoomId}/roomPlan",
+    "yearlyGenerateRatesApi":"https://api.bookonelocal.in/api-bookone/api/property/addYearlyRates",
+    "pointOfSaleApi":"https://api.bookonelocal.in/api-bookone/api/property/{propertyId}/pointOfSale",
+    "businessServiceApi":"https://api.bookonelocal.in/api-bookone/api/businessService",
+    "addAvailabilityByDate":"https://api.bookonelocal.in/api-bookone/api/availability/addAvailabilityByRoomAndDateRange",
+    "addOrUpdatePlanApi":"https://api.bookonelocal.in/api-bookone/api/availability/addOrUpdatePlan"
+    
+  }]
+   

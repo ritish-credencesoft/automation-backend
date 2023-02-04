@@ -1,0 +1,17 @@
+ [{
+  "signUpApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/user/signup",
+  "loginApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/user/login",
+  "updateUserApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/user/updateUser",
+  "addPropertyApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/property/user/add/property",
+  "addSubscriptionApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/property/{propertyId}/addSubscription",
+  "addRoomApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/property/{propertyId}/user/add/room",
+  "getRoomDetailsApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/property/{propertyId}/rooms",
+  "addRoomPlanApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/room/property/{propertyId}/room/{individualRoomId}/roomPlan",
+  "yearlyGenerateRatesApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/property/addYearlyRates",
+  "pointOfSaleApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/property/{propertyId}/pointOfSale",
+  "businessServiceApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/businessService",
+  "addAvailabilityByDate":"https://testapi.bookonelocal.co.nz/api-bookone/api/availability/addAvailabilityByRoomAndDateRange",
+  "addOrUpdatePlanApi":"https://testapi.bookonelocal.co.nz/api-bookone/api/availability/addOrUpdatePlan"
+}]
+ 
+ 
