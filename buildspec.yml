@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo prebuild
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 153432822124.dkr.ecr.ap-south-1.amazonaws.com
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker -v
+      - docker build -t b1ext-onboarding-backend .
+      - docker tag b1ext-onboarding-backend 153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-backend
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push 153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-backend
+      - printf '[{"name":"b1ext-onboarding-backend","imageUri":"153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-backend:latest"}]' > imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json
